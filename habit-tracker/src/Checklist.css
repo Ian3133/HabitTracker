@@ -1,0 +1,17 @@
+/* src/Checklist.css */
+.checklist ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .checklist li {
+    cursor: pointer;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .checklist li.completed {
+    text-decoration: line-through;
+    color: grey;
+  }
+  
