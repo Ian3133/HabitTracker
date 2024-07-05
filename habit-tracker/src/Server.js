@@ -1,6 +1,5 @@
 const express = require("express");
 const mysql = require("mysql2/promise");
-const dbConfig = require('./dbConfig'); // Adjust the path to your dbConfig
 const app = express();
 const port = 3001;
 
