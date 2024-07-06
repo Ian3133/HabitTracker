@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Contents Display</title>
+</head>
+<body>
+    <h1>File Contents</h1>
+    <ul id="fileContents"></ul>
+
+    <script>
+        fetch('/file-contents')
+            .then(response => response.json())
+            .then(data => {
+                const fileContents = data.contents;
+                const lines = fileContents.split('\n');
+                const fileContentsList = document.getElementById('fileContents');
+                lines.forEach(line => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = line;
+                    fileContentsList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error('Error fetching file contents:', error));
+    </script>
+</body>
+</html>

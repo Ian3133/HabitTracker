@@ -1,0 +1,15 @@
+{
+    "name": "file-display-app",
+    "version": "1.0.0",
+    "description": "A simple app to display contents of a file on a webpage",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+  
