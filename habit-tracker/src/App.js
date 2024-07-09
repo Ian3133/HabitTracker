@@ -5,7 +5,7 @@ import Checklist from './Checklist';
 import DateComponent from './DateComponent';
 import Journal from './Journal';
   
-function App() {    
+function App() {        
   return (
     <div className="App">
       <header className="App-header">
