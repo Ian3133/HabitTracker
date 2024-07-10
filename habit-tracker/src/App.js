@@ -6,7 +6,7 @@ import DateComponent from './DateComponent';
 import Journal from './Journal';
   
 function App() {        
-  return (
+  return (      
     <div className="App">
       <header className="App-header">
         <body>
