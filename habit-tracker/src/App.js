@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <body>
-          <p>Words: <DateComponent /></p>
+          <p>Words: <DateComponent /></p>   
           <Checklist />
           <Journal />
         </body>
