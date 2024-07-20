@@ -13,7 +13,7 @@ const Checklist = () => {
 
   const toggleCompletion = (index) => {
     const newItems = items.map((item, i) => {
-      if (i === index) {
+      if (i === index) {    
         return { ...item, completed: !item.completed };
       }
       return item;
