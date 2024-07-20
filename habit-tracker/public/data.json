@@ -6,5 +6,6 @@
   { "text": "Supplements", "completed": false },
   { "text": "Start at Time", "completed": false },
   { "text": "Reading", "completed": false },
-  { "text": "Git", "completed": false }
+  { "text": "Git", "completed": false },
+  { "text": "", "completed": false }
 ]

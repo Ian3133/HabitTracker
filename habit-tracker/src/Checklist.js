@@ -1,25 +1,15 @@
-// src/Checklist.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Checklist.css'; // Import CSS for styling
 
-
-// create 2 arrays of things [0]-[end] and scratch false - true for each as well
-
-
 const Checklist = () => {
-  const [items, setItems] = useState([     // here set for __ in SQL matrex
-    { text: 'AM Practice', completed: false },
-    { text: 'Weight/Curcit', completed: false },
-    { text: 'Streching', completed: false },
-    { text: '', completed: false },
-    { text: 'Supplements', completed: false },
-    { text: 'Start at Time', completed: false },
-    { text: 'Reading', completed: false },
-    { text: 'Git', completed: false },
-  ]);
+  const [items, setItems] = useState([]);
 
-
-
+  useEffect(() => {
+    fetch('/data.json')
+      .then(response => response.json())
+      .then(data => setItems(data))
+      .catch(error => console.error('Error fetching the data:', error));
+  }, []);
 
   const toggleCompletion = (index) => {
     const newItems = items.map((item, i) => {
