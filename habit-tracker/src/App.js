@@ -7,7 +7,7 @@ import Journal from './Journal';
   
 function App() {        
   return (      
-    <div className="App">
+    <div className="App">   
       <header className="App-header">
         <body>
           <p>Words: <DateComponent /></p>   
